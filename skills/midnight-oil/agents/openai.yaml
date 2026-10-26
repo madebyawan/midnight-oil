@@ -1,0 +1,6 @@
+interface:
+  display_name: "Midnight Oil"
+  short_description: "Run tasks overnight with a budget and morning handoff"
+  default_prompt: "Use $midnight-oil to prepare and run the agreed task overnight while I sleep."
+policy:
+  allow_implicit_invocation: true
