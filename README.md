@@ -1,3 +1,5 @@
+<p align="center"><img src="icon.svg" width="112" alt="Midnight Oil icon"></p>
+
 # Midnight Oil
 
 Leave a spec. Wake up to a reviewable result.
