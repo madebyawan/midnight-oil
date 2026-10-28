@@ -45,7 +45,9 @@ A direct overnight request starts preparation and the authorized work. A tentati
 - Implements, verifies, inspects, and repairs until the agreed stopping condition.
 - Defaults to one active worker; additional agents require authorization.
 - Produces requested PRs and prototypes and reports verified results.
-- Preserves partial work when a budget, deadline, or persistent blocker ends the run.
+- Parks blocked tasks and continues independent approved work.
+- Collects ordinary questions into one morning decision brief with recommendations and tradeoffs.
+- Preserves partial work when scope is complete, a budget/deadline is reached, or all remaining tasks are blocked.
 
 It does not merge a PR, deploy to production, or expand the assignment merely because it runs overnight. Those actions need authorization within the task.
 
@@ -63,7 +65,7 @@ Claude-specific setup details are in [the Claude Code reference](skills/midnight
 
 Keep the shared workflow portable and put host-specific behavior in focused references. Preserve natural-language activation, preparation-only intent, project instructions, and honest reporting of incomplete work. Include realistic examples with changes to triggering or continuation behavior.
 
-The skill lives in `skills/midnight-oil/`. Changes there apply to both agents when their installations link to the same checkout.
+The skill lives in `skills/midnight-oil/`. Changes there apply to both agents when their installations link to the same checkout. Every update bumps `metadata.version`, pushes the canonical commit and matching version tag, and refreshes all installed repository copies and lock entries. Verify the shared global links too; they cover projects without a local override.
 
 To try an unpublished change, use this checkout's absolute path instead of `madebyawan/midnight-oil` in the installation command.
 
